@@ -5,7 +5,7 @@ import { CountryData, MapMode, QuizState, QuizModeType } from './types';
 import { COUNTRY_DATA, INITIAL_CENTER, INITIAL_ZOOM } from './constants';
 import InfoPanel from './components/InfoPanel';
 import QuizOverlay from './components/QuizOverlay';
-import { Brain, Map as MapIcon, RotateCcw, Type, MapPin } from 'lucide-react';
+import { Brain, Map as MapIcon, RotateCcw, Type, MapPin, Coffee } from 'lucide-react';
 
 // Fix for default leaflet marker icons
 delete (L.Icon.Default.prototype as any)._getIconUrl;
@@ -236,6 +236,17 @@ const App: React.FC = () => {
           onNextQuestion={nextQuestion}
         />
       )}
+
+      {/* Buy Me A Coffee Button */}
+      <a
+        href="https://buymeacoffee.com/sybrenhuitq"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute bottom-4 right-4 z-[1002] bg-[#FFDD00] text-gray-900 px-4 py-2 rounded-full shadow-lg font-bold flex items-center gap-2 hover:scale-105 transition-transform text-sm border border-yellow-400"
+      >
+        <Coffee size={18} />
+        <span>Buy me a coffee</span>
+      </a>
     </div>
   );
 };
