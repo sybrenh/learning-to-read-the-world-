@@ -1,0 +1,5 @@
+{
+  "name": "GeoScript Atlas",
+  "description": "A zoomable, interactive map for Geoguessr players to learn global alphabets and scripts. Features a practice mode and an AI-powered quiz.",
+  "requestFramePermissions": []
+}
